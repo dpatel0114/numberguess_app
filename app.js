@@ -26,8 +26,8 @@ game.addEventListener('mousedown', function(e){
 
 // Listen for guess 
 guessBtn.addEventListener('click', function(){
-    let guess = parseInt(guessInput.value);
-    // console.log(guess)
+  let guess = parseInt(guessInput.value);
+  // console.log(guess)
 
   // valdate the value
   if(isNaN(guess) || guess < min || guess > max){
@@ -108,7 +108,6 @@ function gameOver(won, msg){
 // Get Random Num
 function getRandomNum(min, max){
   return Math.floor(Math.random()*(max-min+1) + min)
-
 }
 
 // Set message 
